@@ -1,0 +1,3 @@
+This repository demonstrates a common error in F# involving mutable variables within recursive functions. The issue arises when a mutable variable is modified within a recursive call, but the changes are not reflected in the outer scope as expected.
+
+The provided code includes a simple recursive function `loop` that intends to increment a mutable variable `x` ten times. However, due to the way mutable variables are handled in F#, the final value of `x` is not what is expected.  The solution shows how to correctly handle this using techniques like passing the mutable variable as a reference.
